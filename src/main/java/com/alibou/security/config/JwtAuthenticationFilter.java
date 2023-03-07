@@ -1,5 +1,6 @@
 package com.alibou.security.config;
 
+import com.alibou.security.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

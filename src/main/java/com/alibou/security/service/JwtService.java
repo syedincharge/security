@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JwtService {
 
-    private static final String SECRET_KEY = "566B58703273357638792F423F4528482B4D6251655468576D5A713374367739";
+    private static final String SECRET_KEY = "556B58703273357638792F423F4528472B4B6250655368566D59713374367739";
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -70,5 +70,6 @@ public class JwtService {
     private Key getSignInKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
+
     }
 }
